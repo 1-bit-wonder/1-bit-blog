@@ -23,5 +23,10 @@ jobs:
       - name: Install Gatsby CLI
         run: npm install -g gatsby-cli@2.12.34
       
+      - name: Git config
+        run: |
+          git config --local user.email "1-bit-wonder@noreply.github.com"
+          git config --local user.name "GitHub Action"
+      
       - name: Build & Deploy
         run: npm run deploy
