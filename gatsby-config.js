@@ -6,8 +6,8 @@ module.exports = {
       name: `Nigel`,
       summary: ``,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `1-Bit Wonder's Blog`,
+    siteUrl: `https://1-bit-wonder.github.io/blog/`,
     social: {
       twitter: ``,
     },
