@@ -23,10 +23,9 @@ jobs:
       - name: Install Gatsby CLI
         run: npm install -g gatsby-cli@2.12.34
       
-      - name: Git config
-        run: |
-          git config --local user.email "1-bit-wonder@noreply.github.com"
-          git config --local user.name "GitHub Action"
-      
       - name: Build & Deploy
-        run: npm run deploy
+        run: |
+            git remote set-url origin https://git:${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+            npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+        env:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
