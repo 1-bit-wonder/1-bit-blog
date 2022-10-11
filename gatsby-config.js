@@ -15,6 +15,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-umami`,
+      options: {
+        websiteId: '6e7c139c-c123-461a-9029-0846e051b62c',
+        srcUrl: 'https://umami-production-241f.up.railway.app/umami.js',
+        includeInDevelopment: false,
+        autoTrack: true,
+        respectDoNotTrack: true
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
