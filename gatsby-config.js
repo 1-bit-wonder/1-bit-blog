@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `1-Bit Blog`,
     author: {
-      name: `Nigel`,
+      name: `Ni`,
       summary: ``,
     },
     description: `1-Bit Wonder's Blog`,
